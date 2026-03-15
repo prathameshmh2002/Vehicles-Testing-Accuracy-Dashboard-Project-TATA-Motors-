@@ -1,0 +1,45 @@
+fastapi
+uvicorn
+sqlalchemy
+pymysql
+python-dotenv
+ 
+Here’s how the flow works:
+
+Client side (Frontend = Streamlit)
+
+The user opens your dashboard in the browser.
+
+Streamlit sends a request (via requests.get("http://127.0.0.1:8000/data?limit=5000")) to the FastAPI server.
+
+Server side (Backend = FastAPI + SQLAlchemy + PostgreSQL)
+
+FastAPI receives that HTTP request.
+
+The endpoint (e.g., /data) calls your CRUD/database function.
+
+SQLAlchemy sends a SQL query to PostgreSQL.
+
+PostgreSQL fetches the data and returns it to FastAPI.
+
+FastAPI serializes the data into JSON and sends it back to Streamlit.
+
+Client side (again)
+
+Streamlit receives the JSON data.
+
+Converts it into a DataFrame (pandas.DataFrame) and generates charts/tables.
+
+👉 So the server (FastAPI) is responsible for:
+
+Handling client requests.
+
+Querying the database.
+
+Preparing and sending the data back.
+
+👉 The client (Streamlit) is responsible for:
+
+Making requests to the server.
+
+Displaying visuals, filters, dashboards.
