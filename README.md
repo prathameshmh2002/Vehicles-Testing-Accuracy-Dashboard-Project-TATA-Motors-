@@ -31,7 +31,7 @@ This project demonstrates **real-world data analytics architecture used in indus
                   ↓
          Streamlit Dashboard
                   ↓
-                  User Interaction & Visualizations
+    User Interaction & Visualizations
                   
 
 
