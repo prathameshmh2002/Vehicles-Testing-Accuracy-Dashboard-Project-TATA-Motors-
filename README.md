@@ -32,7 +32,8 @@ This project demonstrates **real-world data analytics architecture used in indus
          Streamlit Dashboard
                   ↓
    User Interaction & Visualizations
-                  ↓
+                  
+
 
 The dashboard fetches live vehicle testing data through FastAPI APIs and displays insights using interactive charts and tables.
 
