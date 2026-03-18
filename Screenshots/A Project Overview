@@ -1,0 +1,25 @@
+📊 Project & Dashboard Summary
+
+The Vehicle Testing Accuracy Dashboard is an end-to-end data analytics solution developed to analyze and monitor vehicle testing performance. 
+The project integrates a MySQL database, FastAPI backend, and Streamlit frontend to deliver real-time insights through interactive visualizations.
+
+The dashboard provides a clear view of key metrics such as vehicle testing status, plant-wise performance, and DTC (Diagnostic Trouble Code) trends. 
+Users can apply filters like date range and plant code to dynamically explore the data and identify patterns affecting testing accuracy.
+
+The backend, built using FastAPI, serves as a bridge between the database and the dashboard by exposing RESTful APIs that return structured JSON data. 
+This ensures efficient data retrieval and seamless communication between components.
+
+The system architecture follows a modern pipeline:
+User → Streamlit Dashboard → FastAPI API → MySQL Database, enabling scalable and maintainable data flow.
+
+Overall, this project demonstrates practical implementation of:
+
+1. Data extraction and transformation
+
+2. Backend API development
+
+3. Database integration
+
+4. Interactive dashboard design
+
+5. Real-time data visualization
